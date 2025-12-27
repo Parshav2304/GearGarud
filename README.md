@@ -2,5 +2,5 @@
 
 Team Members Details:
 
-Name: Parshav Shah
+Name: Parshav Shah, 
 email: parshavshah2304@gmail.com
