@@ -38,8 +38,8 @@ st.markdown("""
         <div class="logo-section">
             <span class="logo-icon">🔧</span>
             <div>
-                <h1>GearGuard Pro</h1>
-                <p>Ultimate Equipment & Maintenance Management</p>
+                <h1>GearGuard</h1>
+                <p>The Ultimate Maintenance Trackert</p>
             </div>
         </div>
         <div class="header-stats">
@@ -126,6 +126,6 @@ elif current_view == 'analytics':
 # Footer
 st.markdown("""
 <div class="footer">
-    <p>GearGuard Pro v1.0 | Built for Excellence | © 2024</p>
+    <p>GearGuard-The Ultimate Maintenance Tracker</p>
 </div>
 """, unsafe_allow_html=True)
