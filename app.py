@@ -6,7 +6,7 @@ from pathlib import Path
 # Add modules to path
 sys.path.append(str(Path(__file__).parent))
 
-# Corrected imports - all files are in the root directory
+# Corrected imports - all files are in root directory
 from settings import PAGE_CONFIG, CUSTOM_CSS
 from session_state import initialize_session_state
 from helpers import get_equipment_by_id, is_overdue, get_requests_by_equipment
@@ -16,7 +16,7 @@ import kanban
 import analytics
 import equipment
 import teams
-# Note: File is named "calender_view.py" - you may want to rename it to "calendar_view.py"
+# Handle both spelling variations of calendar
 try:
     import calendar_view
 except ImportError:
