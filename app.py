@@ -6,9 +6,9 @@ from pathlib import Path
 # Add modules to path
 sys.path.append(str(Path(__file__).parent))
 
-from config.settings import PAGE_CONFIG, CUSTOM_CSS
-from utils.session_state import initialize_session_state
-from utils.helpers import get_equipment_by_id, is_overdue, get_requests_by_equipment
+from settings import PAGE_CONFIG, CUSTOM_CSS
+from session_state import initialize_session_state
+from helpers import get_equipment_by_id, is_overdue, get_requests_by_equipment
 from views import kanban, calendar_view, equipment, teams, analytics
 
 # Page configuration
