@@ -6,10 +6,21 @@ from pathlib import Path
 # Add modules to path
 sys.path.append(str(Path(__file__).parent))
 
+# Corrected imports - all files are in the root directory
 from settings import PAGE_CONFIG, CUSTOM_CSS
 from session_state import initialize_session_state
 from helpers import get_equipment_by_id, is_overdue, get_requests_by_equipment
-from views import kanban, calender_view, equipment, teams, analytics
+
+# Import view modules
+import kanban
+import analytics
+import equipment
+import teams
+# Note: File is named "calender_view.py" - you may want to rename it to "calendar_view.py"
+try:
+    import calendar_view
+except ImportError:
+    import calender_view as calendar_view
 
 # Page configuration
 st.set_page_config(**PAGE_CONFIG)
@@ -21,7 +32,7 @@ initialize_session_state()
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 # Header with animated gradient
-st.markdown("""
+st.markdown(""" 
 <div class="main-header">
     <div class="header-content">
         <div class="logo-section">
